@@ -1,5 +1,4 @@
+tensorflow>=2.13.0,<2.20.0
 streamlit
 pandas
 scikit-learn
-tensorflow>=2.13.0,<2.20.0
-joblib
