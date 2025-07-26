@@ -1,5 +1,6 @@
 
 from tensorflow import keras
+import numpy as np
 from Feature_Extractor import extract_features
 # ------------------------------------------------------------------------
 
@@ -10,7 +11,7 @@ def get_prediction(url, model_path):
     model = keras.models.load_model(model_path)
 
     print("Extracting features from url...")
-    url_features = extract_features(url)
+    url_features = np.array([url_features])
     print(url_features)
 
     print("Making prediction...")
